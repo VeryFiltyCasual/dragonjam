@@ -1,3 +1,4 @@
+
 <!DOCTYPE HTML>
 <!--
 	Prologue by HTML5 UP
@@ -6,10 +7,19 @@
 -->
 <html>
 	<head>
-		<title>Prologue copy by Me</title>
+		<title>Ben M _template</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/custom.css" />
+
+		<script
+			src="https://code.jquery.com/jquery-3.3.1.js"
+			integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			crossorigin="anonymous">
+		</script>
+		
+
 	</head>
 	<body class="is-preload">
 
@@ -21,9 +31,11 @@
 					<!-- Logo -->
 						<div id="logo">
 							<span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span>
-							<h1 id="title">B Jam</h1>
-							<p>Hyperspace Engineer</p>
+							<h1 id="title">Ben Jam M.</h1>
+							<p>Digital Artist</p>
 						</div>
+						
+						
 
 					<!-- Nav -->
 						<nav id="nav">
@@ -37,19 +49,12 @@
 
 				</div>
 
-				<div class="bottom">
-
-					<!-- Social Icons -->
-						<ul class="icons">
-							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-							<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-						</ul>
+				
+				<div class="bottom" id="load-socials">
+					
 
 				</div>
-
+			
 			</div>
 
 		<!-- Main -->
@@ -67,7 +72,7 @@
 							</header>
 
 							<footer>
-								<a href="#portfolio" class="button scrolly">Magna Aliquam</a>
+								<a href="#portfolio" class="button scrolly">↓ Magna Aliquam</a>
 							</footer>
 
 						</div>
@@ -166,19 +171,28 @@
 							mauris non cum elit tempus ullamcorper dolor. Libero rutrum ut lacinia
 							donec curae mus. Eleifend id porttitor ac ultricies lobortis sem nunc
 							orci ridiculus faucibus a consectetur. Porttitor curae mauris urna mi dolor.</p>
+							
+							<div class="row">
 
-							<form method="post" action="#">
-								<div class="row">
-									<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
-									<div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" /></div>
-									<div class="col-12">
-										<textarea name="message" placeholder="Message"></textarea>
-									</div>
-									<div class="col-12">
-										<input type="submit" value="Send Message" />
-									</div>
+
+								<div class="col-6 col-12-mobile">
+									<ul class="c-contactlinks">
+										<li><button class="icon solid fa-phone">(000) 000-0000</button></li>
+										<li><button class="icon solid fa-envelope">  <a href="#">information@untitled.tld</a></button></li>
+										<li><button class="icon brands fa-twitter">  <a href="#">twitter.com/untitled-tld</a></button></li>
+										<li><button class="icon brands fa-facebook-f">  <a href="#">facebook.com/untitled-tld</a></button></li>
+										<li><button class="icon brands fa-instagram">  <a href="#">instagram.com/untitled-tld</a></button></li>
+									</ul>
+
 								</div>
-							</form>
+
+								<div class="col-6 col-12-mobile ">
+									<img class="c-contactimg" src="images/salute.png"/>
+								</div>
+
+
+
+							</div>
 
 						</div>
 					</section>
@@ -203,6 +217,11 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				$(document).ready(function(){
+					$("#load-socials").load("headers-socials.html");
+				});
+			</script>
 
 	</body>
 </html>

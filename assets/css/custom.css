@@ -1,0 +1,11 @@
+ul.c-contactlinks{
+    list-style-type: none;
+}
+
+ul.c-contactlinks > li{
+    margin: 10px 0;
+}
+
+img.c-contactimg{
+    max-width: 100%;
+}

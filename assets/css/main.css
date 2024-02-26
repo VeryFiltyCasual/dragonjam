@@ -2121,6 +2121,12 @@ ul.contact {
 				margin-bottom: 0;
 			}
 
+			#header .bottom h2{
+				text-align: center;
+				font-size: 0.8em;
+				color: rgba(255,255,255,0.5);
+			}
+
 		#header .icons {
 			font-size: 0.8em;
 			text-align: center;
